@@ -1,0 +1,16 @@
+{
+    "name": "lucasmandelli/aula-phpoo",
+    "description": "Aula de PHP Orientado a Objeto",
+    "type": "a",
+    "require": {
+        "twbs/bootstrap": "master"
+    },
+    "license": "GNU",
+    "authors": [
+        {
+            "name": "Lucas Mandelli",
+            "email": "lucasmandelli@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
