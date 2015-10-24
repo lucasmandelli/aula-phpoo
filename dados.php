@@ -1,5 +1,6 @@
 <?php
-require_once("ClienteInterface.php");
+require_once("IClienteCobranca.php");
+require_once("IClienteImportancia.php");
 require_once("Cliente.php");
 require_once("ClientePf.php");
 require_once("ClientePj.php");
