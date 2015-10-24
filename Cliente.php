@@ -24,6 +24,7 @@ class Cliente implements ClienteInterface
     public function setId($id)
     {
         $this->id = $id;
+        return $this;
     }
 
     /**
@@ -40,6 +41,7 @@ class Cliente implements ClienteInterface
     public function setNome($nome)
     {
         $this->nome = $nome;
+        return $this;
     }
 
     /**
@@ -56,6 +58,7 @@ class Cliente implements ClienteInterface
     public function setEmail($email)
     {
         $this->email = $email;
+        return $this;
     }
 
     /**
@@ -72,6 +75,7 @@ class Cliente implements ClienteInterface
     public function setTelefone($telefone)
     {
         $this->telefone = $telefone;
+        return $this;
     }
 
     /**
@@ -88,6 +92,7 @@ class Cliente implements ClienteInterface
     public function setEndereco($endereco)
     {
         $this->endereco = $endereco;
+        return $this;
     }
 
     /**
@@ -104,6 +109,7 @@ class Cliente implements ClienteInterface
     public function setEndCobranca($endCobranca)
     {
         $this->endCobranca = $endCobranca;
+        return $this;
     }
 
     /**
@@ -120,6 +126,7 @@ class Cliente implements ClienteInterface
     public function setImportancia($importancia)
     {
         $this->importancia = $importancia;
+        return $this;
     }
 
 

@@ -11,8 +11,12 @@ include('dados.php');
         <title>Lista de Clientes | Aula PHPOO</title>
 
         <!-- Bootstrap -->
-        <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="vendor/bootstrap-table-master/dist/bootstrap-table.css" rel="stylesheet">
+        <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <!-- Bootstrap Table -->
+        <link href="vendor/bootstrap-table-master/dist/bootstrap-table.min.css" rel="stylesheet">
+
+        <!-- Style -->
+        <link href="css/style.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -43,20 +47,26 @@ include('dados.php');
                             <th>Nome</th>
                             <th>E-mail</th>
                             <th>Telefone</th>
-                            <th>Endereço</th>
+                            <th data-sortable="true">Importância</th>
+                            <th>Pessoa</th>
                             <th>Ações</th>
                         </tr>
                         </thead>
                         <tbody>
                         <?php foreach($arrObjetos as $cliente) { ?>
                             <tr>
-                                <td><?php echo $cliente->id; ?></td>
-                                <td><a href="clientes.php?id=<?php echo $cliente->id; ?>"><?php echo $cliente->nome; ?></a></td>
-                                <td><?php echo $cliente->email; ?></td>
-                                <td><?php echo $cliente->telefone; ?></td>
-                                <td><?php echo $cliente->endereco; ?></td>
+                                <td><?php echo $cliente->getId(); ?></td>
+                                <td><a href="clientes.php?id=<?php echo $cliente->getId(); ?>"><?php echo $cliente->getNome(); ?></a></td>
+                                <td><?php echo $cliente->getEmail(); ?></td>
+                                <td><?php echo $cliente->getTelefone(); ?></td>
+                                <td><?php echo $cliente->getImportancia(); ?></td>
+                                <?php if($cliente instanceof ClientePf) { ?>
+                                <td>Física</td>
+                                <?php }else{ ?>
+                                <td>Jurídica</td>
+                                <?php } ?>
                                 <td>
-                                    <a href="clientes.php?id=<?php echo $cliente->id; ?>">
+                                    <a href="clientes.php?id=<?php echo $cliente->getId(); ?>">
                                         <i class="glyphicon glyphicon-eye-open"></i>
                                     </a>
                                 </td>

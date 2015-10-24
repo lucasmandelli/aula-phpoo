@@ -1,0 +1,24 @@
+body a {
+    color: #336666;
+    outline: none;
+}
+body a:hover, body a:focus {
+    color: #499c9c;
+    outline: none;
+}
+
+.page-header h1 a {
+    display: inline-block;
+    font-size: 2rem;
+    padding: 10px 0 0;
+}
+
+.img-user i {
+    font-size: 20rem;
+}
+
+.importancia {
+    color: #aa6708;
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
