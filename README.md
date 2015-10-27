@@ -11,3 +11,7 @@ Repositório para o projeto do curso de PHP OO.
 - Adição de tipos de cliente
 - Possibilidade de adicionar endereço de cobrança
 - Adicionado importância do cliente
+
+### Fase 3
+- Organização dos códigos seguindo padrão PSR-0
+- Alterado projeto para trabalhar com namespace e autoload

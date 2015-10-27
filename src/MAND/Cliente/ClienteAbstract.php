@@ -1,6 +1,12 @@
 <?php
 
-class Cliente implements IClienteCobranca, IClienteImportancia
+namespace MAND\Cliente;
+
+
+use MAND\Cliente\Implementacoes\ClienteCobrancaInterface;
+use MAND\Cliente\Implementacoes\ClienteImportanciaInterface;
+
+abstract class ClienteAbstract implements ClienteCobrancaInterface, ClienteImportanciaInterface
 {
     protected $id;
     protected $nome;

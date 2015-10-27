@@ -1,9 +1,8 @@
 <?php
-require_once("IClienteCobranca.php");
-require_once("IClienteImportancia.php");
-require_once("Cliente.php");
-require_once("ClientePf.php");
-require_once("ClientePj.php");
+require_once("autoload.php");
+
+use MAND\Cliente\Types\ClientePf;
+use MAND\Cliente\Types\ClientePj;
 
 
 $objCliente0 = new ClientePf();
@@ -92,4 +91,4 @@ $objCliente9->setId(9)
             ->setImportancia(5)
             ->setEndCobranca('Rua Fernando Simas, 299');
 
-$arrObjetos = [$objCliente0, $objCliente1, $objCliente2, $objCliente3, $objCliente4, $objCliente5, $objCliente6, $objCliente7, $objCliente8, $objCliente9];
+$arrObjetos = array(0 => $objCliente0, 1 => $objCliente1, 2 => $objCliente2, 3 => $objCliente3, 4 => $objCliente4, 5 => $objCliente5, 6 => $objCliente6, 7 => $objCliente7, 8 => $objCliente8, 9 => $objCliente9);

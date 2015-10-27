@@ -1,6 +1,10 @@
 <?php
 
-class ClientePf extends Cliente
+namespace MAND\Cliente\Types;
+
+use MAND\Cliente\ClienteAbstract;
+
+class ClientePf extends ClienteAbstract
 {
 
     private $numDocumento;

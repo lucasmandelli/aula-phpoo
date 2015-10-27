@@ -1,6 +1,8 @@
 <?php
 
-interface IClienteImportancia
+namespace MAND\Cliente\Implementacoes;
+
+interface ClienteImportanciaInterface
 {
 
     public function getImportancia();

@@ -1,5 +1,5 @@
 <?php
-include('dados.php');
+include_once('dados.php');
 ?>
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
