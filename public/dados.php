@@ -1,5 +1,5 @@
 <?php
-require_once("autoload.php");
+require_once("../autoload.php");
 
 use MAND\Cliente\Types\ClientePf;
 use MAND\Cliente\Types\ClientePj;
